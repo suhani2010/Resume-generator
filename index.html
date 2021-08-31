@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+  <title>Resume Generator</title>
+</head>
+<body>
+
+      <div class="container" id="cv-form">
+<h1 class="text-center my-5">Resume Generator</h1>
+
+<div class="row">
+  <div class="col-md-6">
+    <div class="card">
+  <div class="card-header">
+  <h3 class="text-center"> Personal Information</h3>
+  </div>
+  <div class="card-body">
+    <div class="form-group">
+      <label for="nameField"><b>Name</b></label>
+      <input type="text" class="form-control" placeholder="Enter your name" id="nameField">
+    </div>
+    <div class="form-group">
+      <label for="contactField"><b>Contact</b></label>
+      <input type="text" class="form-control" placeholder="Enter your contact number" id="contactField">
+    </div>
+    <div class="form-group">
+      <label for="emailField"><b>Email</b></label>
+      <input type="email" class="form-control" placeholder="Enter your Email" id="emailField">
+    </div>
+    <div class="form-group">
+      <label for="objectiveField"><b>Career objective</b></label>
+      <textarea rows="4" class="form-control" placeholder="Enter your Career objective" id="objectiveField"></textarea>
+    </div>
+    <div class="form-group">
+      <label for=""><b>Select Your Photo</b></label>
+      <input id="imgField" type="file" class="form-control" />
+    </div>
+    <div class="form-group">
+      <label for="skillsField"><b>Skills</b></label>
+      <textarea rows="4" class="form-control" placeholder="Enter your Skills" id="skillsField"></textarea>
+    </div>
+    <hr />
+    <p class="text-secondary my-3"> Profile Links</p>
+    <div class="form-group">
+      <label for="LinkedInField"><b>LinkedIn</b></label>
+      <input type="text" class="form-control" placeholder="Enter LinkedIn link" id="LinkedInField">
+    </div>
+    <div class="form-group">
+      <label for="githubField"><b>Github</b></label>
+      <input type="text" class="form-control" placeholder="Enter github link" id="githubField">
+    </div>
+    <div class="form-group">
+      <label for="portfolioField"><b>Portfolio</b></label>
+      <input type="text" class="form-control" placeholder="Enter portfolio link" id="portfolioField">
+    </div>
+
+  </div>
+</div>
+
+  </div>
+  <div class="col-md-6">
+    <div class="card">
+  <div class="card-header">
+  <h3 class="text-center"> Education</h3>
+  </div>
+  <div class="card-body">
+    <h4><i class="fas fa-graduation-cap"></i> College</h4><hr />
+    <div class="form-group">
+
+      <label for="clgNameField"><b>College name</b></label>
+      <input type="text" class="form-control" placeholder="Enter college name" id="clgNameField">
+    </div>
+    <div class="form-group">
+      <label for="degreeField"><b>Degree</b></label>
+      <input type="text" class="form-control" placeholder="Enter your Degree" id="degreeField">
+    </div>
+    <div class="form-group">
+      <label for="cgpaField"><b>CGPA/Percentage</b></label>
+      <input type="number" class="form-control" placeholder="Enter your CGPA" id="cgpaField">
+    </div>
+    <div class="form-group">
+      <label for="clgYearField"><b>Year</b></label>
+      <input type="text" class="form-control" placeholder="Enter your college year" id="clgYearField">
+    </div>
+    <h4><i class="fas fa-university"></i> School</h4><hr>
+    <div class="form-group">
+      <label for="schoolNameField"><b>School name</b></label>
+      <input type="text" class="form-control" placeholder="Enter School name" id="schoolNameFieldHsc">
+    </div>
+    <div class="form-group">
+      <label for="HscperField"><b>HSC CGPA/Percentage</b></label>
+      <input type="number" class="form-control" placeholder="Enter your percentage/cgpa" id="HscperField">
+    </div>
+    <div class="form-group">
+      <label for="HscYearField"><b>Year</b></label>
+      <input type="text" class="form-control" placeholder="Enter your Hsc Year" id="HscYearField">
+    </div>
+    <div class="form-group">
+      <label for="schoolNameField"><b>School name</b></label>
+      <input type="text" class="form-control" placeholder="Enter School name" id="schoolNameFieldSSc">
+    </div>
+    <div class="form-group">
+      <label for="ssccgpaField"><b>SSC CGPA/Percentage</b></label>
+      <input type="number" class="form-control" placeholder="Enter your SSC year" id="ssccgpaField">
+    </div>
+    <div class="form-group">
+      <label for="SscYearField"><b>Year</b></label>
+      <input type="text" class="form-control" placeholder="Enter your SSC year" id="SscYearField">
+    </div>
+
+
+  </div>
+</div>
+  </div>
+
+</div>
+
+<div class="row my-5">
+  <div class="col-md-6 ">
+    <div class="card">
+  <div class="card-header">
+  <h3 class="text-center">Experience</h3>
+  </div>
+  <div class="card-body">
+    <div class="container" id="main-form">
+      <div class="form-group" >
+        <label for="cmpnameField"><b>Company Name</b></label>
+        <input type="text" class="form-control" placeholder="Enter company name" id="cmpnameField">
+      </div>
+      <div class="form-group">
+        <label for="durationField"><b>Duration</b></label>
+        <input type="text" class="form-control" placeholder="Enter duration" id="durationField">
+      </div>
+      <div class="form-group">
+        <label for="descField"><b>Description</b></label>
+        <textarea rows="4" class="form-control" placeholder="Enter your job description" id="descField"></textarea>
+      </div>
+      <hr>
+    </div>
+
+    <!-- <div class="container text-center">
+      <button type="button" onclick="addMoreWE()" class="btn btn-dark btn-sm repeat">Add more work experience</button>
+    </div> -->
+
+  </div>
+</div>
+
+  </div>
+  <div class="col-md-6">
+    <div class="card">
+  <div class="card-header">
+  <h3 class="text-center">Projects</h3>
+  </div>
+  <div class="card-body">
+    <div class="container prField" id="main-form2">
+      <div class="form-group">
+        <label for="pTitleField"><b>Title</b></label>
+        <input type="text" class="form-control" placeholder="Enter project title" id="pTitleField">
+      </div>
+      <div class="form-group">
+        <label for="pLinkField"><b>Link</b></label>
+        <input type="text" class="form-control" placeholder="Enter project link" id="pLinkField">
+      </div>
+      <div class="form-group">
+        <label for="pdescField"><b>Description</b></label>
+        <textarea rows="4" class="form-control" placeholder="Enter your project description" id="pdescField"></textarea>
+      </div>
+        <hr>
+    </div>
+
+    <!-- <div class="container text-center">
+      <button type="button" class="btn btn-dark btn-sm repeat2">Add more Projects</button>
+    </div> -->
+
+  </div>
+</div>
+  </div>
+
+</div>
+
+
+<div class="container text-center">
+  <button type="button" onclick="generateCV()" class="btn btn-dark mb-5" name="button">Generate CV</button>
+</div>
+</div>
+
+<!--CV Template-->
+<div class="container" id="cv-template" style="display:none">
+  <div class="container" id="download">
+  <div class="row">
+    <div class="col-4 text-center background">
+        <!-- first col -->
+        <img src="https://st.depositphotos.com/1052233/2815/v/600/depositphotos_28158459-stock-illustration-male-default-profile-picture.jpg" class="img-fluid myimg mt-4" alt="default pic" id="imgTemplate">
+        <div class="container">
+          <p id="nameT1" style="color:#9b9b9b; font-weight:800">Suhani Ashok Porwal</p>
+          <hr />
+          <h4 style="color:#FFFFFF" class="text-left">Contact</h4>
+          <hr style="background: #FFFFFF" />
+
+          <p id="contactT" style="color:#FFFFFF" class="text-left">+91-9131782392</p>
+          <p id="emailT" style="color:#FFFFFF" class="text-left">suhani@gmail.com</p>
+          <p class="text-left"><a id="linkedinT" href="#" style="color:#FFFFFF">LinkedIn <i class="fab fa-linkedin"></i></a></p>
+          <p class="text-left"><a id="githubT" href="#" style="color:#FFFFFF">Github <i class="fab fa-github"></i></a></p>
+          <p class="text-left"><a id="portfolioT" href="#" style="color:#FFFFFF">Portfolio <i class="fas fa-users"></i></a></p>
+          <hr />
+          <h4 style="color:#FFFFFF" class="text-left">Skills</h4>
+          <hr style="background: #FFFFFF" />
+          <p class=" text-left" id="skillsT" style="color: #FFFFFF; font-size:16px" >
+hello
+          </p>
+        </div>
+    </div>
+    <div class="col-8 " style="background:#f2f2f2">
+      <!-- second col -->
+      <h1 id="nameT2" class="text-center mt-2" style="font-weight:980">Suhani Ashok Porwal</h1>
+      <!-- career objective card -->
+      <div class="card mt-4">
+        <div class="card-header background" >
+          <h3 style="color:#FFFFFF">Career Objective</h3>
+        </div>
+        <div class="card-body"  style="background:#f2f2f2">
+          <p id="objectiveT">Versatile college student who is able to learn quickly and handle varied Responsibilities, seeking an internship position that would allow exploration into career options in the Software Development field. I am a dedicated team player who can be relied upon to help any project achieve its goals.</p>
+        </div>
+      </div>
+      <div class="card ">
+        <div class="card-header background" >
+          <h3 style="color:#FFFFFF">Work Experience</h3>
+        </div>
+        <div class="card-body"  style="background:#f2f2f2">
+          <h3 id="cmpnameT">Company Name</h3>
+          <h5 id="durationT" style="color:#737373 ;font-weight:700">Duration</h5>
+          <p id="descT">Description</p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header background" >
+          <h3 style="color:#FFFFFF">Projects</h3>
+        </div>
+        <div class="card-body"  style="background:#f2f2f2">
+          <h3 id="prT">Project Title</h3>
+          <p><a href="#" id="prlinkT" >Project Link</a></p>
+          <p id="prdescT">Description</p>
+          </ul>
+        </div>
+      </div>
+      <div class="card ">
+        <div class="card-header background" >
+          <h3 style="color:#FFFFFF">Education</h3>
+        </div>
+        <div class="card-body"  style="background:#f2f2f2">
+          <h4 style="display:inline"><span id="clgNameT">College Name</span> - <i id="degreeT">Degree</i></h4>
+          <p style="color:#737373 ;font-weight:700"><span id="yearT">Year</span> (Percentage/CGPA : <span id="cgpaT" ></span> )</p><hr />
+
+          <h4 style="display:inline"><span id="schoolnameT">School Name</span>- <i>12th</i></h4>
+          <p style="color:#737373 ;font-weight:700"><span id="hscyearT">Year</span> (Percentage/CGPA : <span id="hsccgpaT" ></span> )</p><hr />
+          <h4 style="display:inline"><span id="schoolnamesscT">School Name</span>- <i>10th</i></h4>
+          <p style="color:#737373 ;font-weight:700"><span id="sscyearT">Year</span> (Percentage/CGPA : <span id="ssccgpaT" ></span> )</p>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</div>
+  <div class="container text-center">
+    <button onclick="printCV()" id="save" class="btn brn-lg btn-dark my-4">Print CV</button>
+  </div>
+</div>
+
+
+
+
+
+
+
+<!--End Of CV Template-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.2/html2pdf.bundle.js" integrity="sha512-ICHkAOXzVDEkL5xkXjAWRV/hx6Bq4ID/uhRcnj9zS7QCdCbhVtfgjwt/vTfUBtW1wzBkErImU0huK3LDVeEr8g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script src="myjs.js"></script>
+</body>
+</html>
